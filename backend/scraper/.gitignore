@@ -1,0 +1,19 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[codz]
+*$py.class
+
+# Scrapy crawl state (JOBDIR) — resume data, never commit.
+crawls/
+
+# Scrapy feed outputs produced during local runs.
+*.jsonl
+*.json
+*.csv
+*.xml
+
+# Optional cross-run SQLite dedup database.
+*.sqlite3
+
+# Environments
+.venv/

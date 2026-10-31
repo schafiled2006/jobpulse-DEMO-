@@ -1,0 +1,17 @@
+JobPulse Stage 2 - cleaning report
+==================================
+Input records (raw JSONL):        1989
+After dedup (kept):               1989
+Dropped duplicates (hash):        0
+is_valid=True  (>= 20 chars): 1987
+is_valid=False (< 20 chars):  2
+
+Language distribution (original `language` field):
+  en: 27
+  fa: 1152
+  mixed: 810
+
+description_clean_length: min=13 max=6992 mean=795.3
+embed_text length:        min=29 max=7019 mean=843.6
+
+Dropped duplicate ids: none

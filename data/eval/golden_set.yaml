@@ -1,0 +1,171 @@
+# Stage 9 — Evaluation Golden Set (JobPulse)
+
+> ۱۶ نمونه رزومه → آگهی‌های مرتبط مورد انتظار (۴ نمونه در ۲۰۲۶-۱۰-۰۲ اضافه شد).
+> روش برچسب‌گذاری: خواندن دستی `title_clean` + `category` +
+> `required_skills` + ابتدای `description_clean` هر آگهی (نه خروجی سیستم).
+> قانون: آگهی‌ای expected است که هم‌حوزه و هم‌سطح رزومه باشد؛ آگهی‌های
+> حوزه نامرتبط (حتی با امتیاز بالا) expected نیستند.
+
+version: 1
+created: "2026-09-30"
+updated: "2026-10-02"
+notes: "ids refer to data/processed/jobvision_clean.jsonl (is_valid=True)"
+
+samples:
+  - id: "py-backend-fa"
+    lang: "fa"
+    domain: "backend"
+    level: "mid"
+    resume_text: >-
+      مهندس نرم‌افزار بک‌اند با ۳ سال سابقه. مسلط به Python و Django و
+      FastAPI. طراحی REST API، کار با PostgreSQL و Docker و Git.
+      تجربه میکروسرویس و کار تیمی اسکرام.
+    expected_job_ids: ["1518843", "1406735", "1443518"]
+    notes: "هر سه بک‌اند پایتونی‌اند؛ 1439412 دات‌نتی است و عمداً excluded"
+
+  - id: "py-backend-en"
+    lang: "en"
+    domain: "backend"
+    level: "senior"
+    resume_text: >-
+      Senior Backend Engineer with 6 years of experience. Expert in Python,
+      Django, PostgreSQL, Docker and Linux. Built high-throughput
+      microservices, MongoDB experience, CI with Git.
+    expected_job_ids: ["1406735", "1518843", "1443518"]
+
+  - id: "frontend-fa"
+    lang: "fa"
+    domain: "frontend"
+    level: "mid"
+    resume_text: >-
+      توسعه‌دهنده فرانت‌اند با ۳ سال تجربه. مسلط به React و Next.js و
+      TypeScript. کار با Tailwind و REST API و Git.
+    expected_job_ids: ["1441509"]
+    notes: "1519368 هم فرانت‌اند است ولی مهارت‌های پایتون/جنگو دارد؛ borderline و excluded"
+
+  - id: "frontend-mixed"
+    lang: "mixed"
+    domain: "frontend"
+    level: "junior"
+    resume_text: >-
+      Junior front-end developer. Skills: JavaScript, React.js, Next.js,
+      TypeScript, Tailwind CSS. آشنایی با Git و REST API.
+    expected_job_ids: ["1441509", "1504625"]
+
+  - id: "ai-mixed"
+    lang: "mixed"
+    domain: "ml-ai"
+    level: "mid"
+    resume_text: >-
+      Machine Learning Engineer with 3 years of experience. Python,
+      PyTorch, NLP, Transformers. آشنا با Docker و REST API و PostgreSQL.
+    expected_job_ids: ["1443518"]
+    notes: "تنها آگهی واقعی هوش مصنوعی دیتاست؛ 1504625 سافت‌ور AI-First است نه ML خالص"
+
+  - id: "data-fa"
+    lang: "fa"
+    domain: "data"
+    level: "senior"
+    resume_text: >-
+      کارشناس ارشد تحلیل داده با ۵ سال سابقه. مسلط به Python و SQL Server
+      و PowerBI. تحلیل رفتار مشتری و سگمنتیشن در تیم مارکتینگ.
+    expected_job_ids: ["1451112"]
+
+  - id: "devops-fa"
+    lang: "fa"
+    domain: "devops"
+    level: "senior"
+    resume_text: >-
+      مهندس DevOps ارشد با ۵ سال تجربه. مسلط به Linux و Docker و
+      Kubernetes. مانیتورینگ با Prometheus، CI/CD با Gitlab،
+      مدیریت PostgreSQL و MySQL در Production.
+    expected_job_ids: ["1471036"]
+    notes: "1426636 بک‌اند دات‌نتی با Docker/K8s است؛ حوزه اصلی‌اش بک‌اند است نه DevOps"
+
+  - id: "network-fa"
+    lang: "fa"
+    domain: "network"
+    level: "mid"
+    resume_text: >-
+      کارشناس شبکه با ۴ سال سابقه. مسلط به Linux و Windows Server.
+      کار با Mikrotik و Wireshark، پشتیبانی دیتاسنتر و Ansible.
+    expected_job_ids: ["1519519", "1454355", "758152"]
+
+  - id: "finance-fa"
+    lang: "fa"
+    domain: "finance"
+    level: "mid"
+    resume_text: >-
+      کارشناس حسابداری با ۴ سال سابقه. مسلط به سپیدار و همکاران سیستم و
+      راهکاران. مغایرت‌گیری، Excel، صدور اسناد حسابداری.
+    expected_job_ids: ["1424865", "1445258", "1394621"]
+    notes: "1468128 حسابدار فروش تخصصی راهکاران است؛ مهارت عمومی کمتر"
+
+  - id: "finance-en-tools"
+    lang: "mixed"
+    domain: "finance"
+    level: "junior"
+    resume_text: >-
+      Junior accountant, 2 years. Excel, هلو, Microsoft Word.
+      صدور فاکتور فروش، مغایرت‌گیری حساب مشتریان.
+    expected_job_ids: ["231098", "1501434"]
+
+  - id: "edge-short"
+    lang: "fa"
+    domain: "edge"
+    level: "unknown"
+    resume_text: "برنامه‌نویس"
+    expected_job_ids: []
+    notes: "رزومه تک‌کلمه‌ای: هیچ آگهی خاصی expected نیست؛ فقط نباید کرش کند"
+
+  - id: "edge-rare"
+    lang: "mixed"
+    domain: "edge"
+    level: "senior"
+    resume_text: >-
+      Senior COBOL mainframe developer, 15 years. JCL, DB2, CICS.
+      متخصص نگهداری سیستم‌های بانکی قدیمی.
+    expected_job_ids: []
+    notes: "مهارت کمیاب بدون آگهی مرتبط در دیتاست؛ انتظار zero-match منصفانه"
+
+  - id: "wordpress-fa"
+    lang: "fa"
+    domain: "cms"
+    level: "mid"
+    resume_text: >-
+      کارشناس وردپرس با ۳ سال تجربه. طراحی و پشتیبانی سایت با WordPress،
+      افزونه‌های سئو و فرم‌ساز. آشنایی با HTML و CSS و JavaScript
+      و Google Analytics.
+    expected_job_ids: ["1518894", "1518848"]
+    notes: "هر دو وب‌سایت/وردپرس‌اند؛ 932894 تولید محتوا با وردپرس است نه توسعه وب"
+
+  - id: "graphic-fa"
+    lang: "fa"
+    domain: "design"
+    level: "mid"
+    resume_text: >-
+      طراح گرافیک با ۴ سال سابقه. مسلط به Photoshop و Illustrator و After Effects.
+      طراحی پوستر، بنر و موشن گرافیک برای شبکه‌های اجتماعی و کمپین‌های تبلیغاتی.
+    expected_job_ids: ["486903", "1501566", "1485914", "1501606"]
+    notes: "1468180 تدوینگر ویدیو (Premiere) است؛ حوزه اصلی‌اش تدوین نه طراحی"
+
+  - id: "seo-fa"
+    lang: "fa"
+    domain: "marketing"
+    level: "mid"
+    resume_text: >-
+      کارشناس دیجیتال مارکتینگ با تمرکز بر سئو. بهینه‌سازی سایت با Google
+      Search Console و Ahrefs و Semrush. تولید محتوا، Google Analytics
+      و تجربه کار با وردپرس.
+    expected_job_ids: ["1518947", "1503522", "1518894"]
+    notes: "1518873 مدیر فروش اینترنتی است نه سئو؛ excluded"
+
+  - id: "hr-fa"
+    lang: "fa"
+    domain: "hr"
+    level: "junior"
+    resume_text: >-
+      کارمند منابع انسانی با ۲ سال تجربه. جذب و استخدام، کارگزینی و ارتباط
+      با متقاضیان. مسلط به Word و Excel و PowerPoint و بایگانی مدارک پرسنلی.
+    expected_job_ids: ["1425455", "1425182"]
+    notes: "1425455 جذب و استخدام؛ 1425182 اداری و منابع انسانی"

@@ -1,0 +1,54 @@
+[project]
+name = "jobpulse-backend"
+version = "0.1.0"
+description = "Job Pulse backend: FastAPI service that analyzes a resume against real Iranian job postings using RAG (ChromaDB + BAAI/bge-m3 + Google Gemini)."
+readme = "README.md"
+authors = [
+    { name = "M.A.Mohammaadi", email = "amin.mohammadii.dev@gmail.com" }
+]
+requires-python = ">=3.11"
+dependencies = [
+    "fastapi[standard]>=0.141.1",
+    # Imported directly by `app.core.config`, so it is declared explicitly even though
+    # `fastapi[standard]` happens to pull it in transitively today.
+    "pydantic-settings>=2.0.0",
+    # Stage 6 – Google Gemini API for LLM-based gap analysis.
+    "google-genai>=1.0.0",
+    # Stage 2 – HTML stripping + Persian normalization (locked stack: Hazm).
+    "beautifulsoup4>=4.12",
+    "hazm>=0.10",
+    # Stage 4 & 5 – Vector database and embeddings.
+    "chromadb>=1.5.9",
+    "sentence-transformers>=6.1.0",
+    # Stage 3 – Tokenizer-only analysis for chunking decision (BGE-M3).
+    "transformers>=4.40",
+    # Stage 7 – File parsing, rate limiting, and multipart form support.
+    "pypdf>=6.19.0",
+    "python-docx>=1.2.0",
+    "slowapi>=0.1.10",
+    "python-multipart>=0.0.32",
+]
+
+[dependency-groups]
+# Dev-only tooling: `uv sync` installs this group, `uv sync --no-dev` skips it.
+dev = [
+    "pytest>=8.0.0",
+    # Powers `fastapi.testclient.TestClient` (already available via fastapi[standard],
+    # pinned here so the test suite keeps working if those extras ever change).
+    "httpx>=0.28.0",
+]
+
+[tool.uv]
+# This is an application, not a distributable library: `app/` is imported from the
+# project root instead of being installed into site-packages.
+package = false
+
+[tool.pytest.ini_options]
+# `pythonpath = ["."]` lets tests do `from app.main import app` without an editable
+# install (which `package = false` rules out).
+pythonpath = ["."]
+testpaths = ["tests"]
+addopts = "-ra"
+markers = [
+    "slow: needs the BGE-M3 tokenizer (first run downloads ~570 MB, then cached).",
+]

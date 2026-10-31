@@ -1,0 +1,72 @@
+{
+  "matched_jobs": [
+    {
+      "id": "1439412",
+      "title": "توسعه‌دهنده Back-End",
+      "company": "یوتراوز",
+      "similarity_score": 0.6908,
+      "source_url": "https://jobvision.ir/jobs/1439412/استخدام-توسعه-دهنده-back-end",
+      "description_clean": "وظایف و مسئولیت‌ها: طراحی، توسعه و نگه‌داری سرویس‌ها و اپلیکیشن‌های بک‌اند با استفاده از ASP. NET Core همکاری نزدیک با اعضای تیم برای طراحی معماری و پیاده‌سازی راهکارهای مقیاس‌پذیر نوشتن کد تمیز، تست‌پذیر و قابل نگه‌داری با رعایت اصول SOLID و Design Patterns توسعه و بهبود RESTful APIs با رعایت بهترین استانداردهای طراحی رفع باگ، بهینه‌سازی عملکرد و بازبینی کد سایر اعضای تیم نگارش مستندات فنی و ثبت فعالیت‌ها در سیستم مدیریت پروژه به‌روزرسانی مداوم دانش و پیشنهاد فناوری‌های جدید برای بهبود پروژه‌ها مهارت‌ها و توانمندی‌ها: تسلط کامل به زبان C# و فریم‌ورک. NET تجربه در معماری‌های چندلایه، Clean و Microservices تسلط بر Entity Framework Core و مفاهیم OOP و Dependency Injection تسلط به Git و فرآیندهای کنترل نسخه آشنایی با متدولوژی‌های چابک (Agile / Scrum) آشنایی با SQL Server و PostgreSQL توانایی "
+    },
+    {
+      "id": "1518843",
+      "title": "برنامه‌نویس بک‌اند (Python / Django)",
+      "company": "مرکز آهن",
+      "similarity_score": 0.6608,
+      "source_url": "https://jobvision.ir/jobs/1518843/استخدام-برنامه‌نویس-بک‌اند-python---django",
+      "description_clean": "مرکزآهن برای توسعه و گسترش زیرساخت‌های فنی وب‌سایت خود، به یک توسعه‌دهنده بک‌اند Python / Django باانگیزه و مسئولیت‌پذیر نیاز دارد. اگر به توسعه نرم‌افزار، معماری بک‌اند و کار با زیرساخت‌های مدرن علاقه‌مند هستید و در کنار Django با Git و Docker راحت هستید، خوشحال می‌شویم به تیم ما بپیوندید. مسئولیت‌ها توسعه و نگهداری بک‌اند وب‌سایت مرکزآهن با استفاده از Python / Django طراحی و توسعه APIهای موردنیاز با Django REST Framework طراحی و بهینه‌سازی ساختار دیتابیس و کوئری‌ها توسعه قابلیت‌های جدید و بهبود سرویس‌های موجود رفع خطاها و بهینه‌سازی عملکرد و امنیت بک‌اند همکاری با تیم Frontend و سایر اعضای تیم فنی کار با Git و رعایت اصول مدیریت کد و Branching استفاده و مدیریت سرویس‌ها و محیط‌های توسعه با Docker مشارکت در بهبود فرآیندهای Deployment و زیرساخت نرم‌افزار مهارت‌های ضروری تسلط مناسب به Python "
+    },
+    {
+      "id": "1426636",
+      "title": "مهندس ارشد بک‌اند (. NET) (تک‌لید فنی) - آقا",
+      "company": "آی فور تویینز",
+      "similarity_score": 0.6329,
+      "source_url": "https://jobvision.ir/jobs/1426636/استخدام-مهندس-ارشد-بک‌اند-net-تک‌لید-فنی---آقا",
+      "description_clean": "شرح وظایف و مسئولیت‌ها توسعه سرویس‌های بک‌اند با معماری میکروسرویس رویدادمحور. رهبری فنی روزمره تیم، بازبینی کد (Code Review)، استانداردگذاری و تعریف تسک‌ها در اسپرینت. یکپارچگی با لایه داده و پیام‌رسانی (MSSQL، RabbitMQ و انبارهای داده). ایجاد و نگهداری مستندات فنی، از جمله مستندات طراحی و کتابچه‌های راهنمای کاربر. ارائه راهنمایی و مشاوره به توسعه‌دهندگان جوان با هدف رشد و توسعه مهارت‌های آن‌ها. همکاری نزدیک با تیم‌های متقاطع مانند QA، مدیریت محصول و فرانت. تضمین کیفیت، نگه‌داشت‌پذیری و کارایی کد و کاهش بدهی فنی. هماهنگی با تیم DevOps برای استقرار سرویس‌ها. مستندسازی و انتقال دانش فنی در تیم. مهارت‌ها و شرایط احراز (الزامی) مدرک تحصیلی کارشناسی یا بالاتر در رشته‌های مرتبط (مهندسی کامپیوتر / نرم‌افزار / فناوری اطلاعات) — الزامی. حداقل ۵ سال تجربه توسعه بک‌اند و تسلط عمیق بر C# /. NET و معم"
+    },
+    {
+      "id": "1471036",
+      "title": "Senior DevOps Engineer (Database & Infrastructure)",
+      "company": "دکتردکتر",
+      "similarity_score": 0.6114,
+      "source_url": "https://jobvision.ir/jobs/1471036/استخدام-senior-devops-engineer-database--infrastructure",
+      "description_clean": "ما به دنبال یک Senior DevOps Engineer با تمرکز ویژه بر Database Administration (DBA) هستیم؛ فردی که بتواند زیرساخت‌های Production را مدیریت کرده، عملکرد پایگاه‌های داده را در مقیاس بالا بهینه‌سازی کند و نقش موثری در طراحی معماری سیستم ایفا کند. شما به ما در کارهای زیر همکاری خواهید کرد: طراحی، پیاده‌سازی و نگهداری زیرساخت‌های Production با قابلیت High Availability مدیریت، مانیتورینگ و بهینه‌سازی PostgreSQL و MySQL تحلیل و رفع مشکلات Performance، Bottleneck و Queryهای سنگین طراحی و پیاده‌سازی Backup، Restore و Disaster Recovery پیاده‌سازی Replication، Failover و استراتژی‌های High Availability طراحی و نگهداری CI / CD Pipeline مدیریت Containerها و سرویس‌های مبتنی بر Docker (و در صورت نیاز Kubernetes) پیاده‌سازی Monitoring، Logging و Alerting برای زیرساخت و دیتابیس همکاری با تیم توسعه در طراحی"
+    },
+    {
+      "id": "1441509",
+      "title": "برنامه‌نویس فرانت اند",
+      "company": "پرشین سیستم",
+      "similarity_score": 0.6088,
+      "source_url": "https://jobvision.ir/jobs/1441509/استخدام-برنامه-نویس-فرانت-اند",
+      "description_clean": "شرح شغل و وظایف مجموعه پرشین سیستم در راستای تکمیل کادر برنامه‌نویسی خود به دنبال افرادی با امکان فعالیت حضوری و داشتن توانایی و مهارت‌های زیر می‌باشد: آشنایی کامل با فریم‌ورک Next. js آشنایی کامل با React. js آشنایی کامل با TypeScript آشنایی کامل با متدهای RESTful آشنایی کامل با SSG، SSR و ISG آشنایی کامل با Tailwind CSS آشنایی کامل با Git و GitLab آشنایی کامل با API برای تعامل داده‌ها در وب آشنایی کامل با مفاهیم caching کدنویسی تمیز و بهینه داشتن حداقل سه سال سابقه کار مرتبط الزامی می‌باشد. آشنایی با موارد زیر امتیاز محسوب می‌شود: TanStack shadcn داشتن مهارت‌های حل مسئله، تحلیل سناریو و خلاقیت در انجام کارها مزیت محسوب می‌شود. لازم به ذکر است مصاحبه در دو مرحله منابع انسانی و فنی انجام می‌گردد."
+    }
+  ],
+  "gap_analysis": {
+    "matching_skills": [
+      "Git",
+      "Docker",
+      "PostgreSQL",
+      "REST API",
+      "Redis",
+      "Linux",
+      "Microservices",
+      "Python",
+      "Celery",
+      "Django"
+    ],
+    "missing_skills": [
+      "Kubernetes",
+      "RabbitMQ",
+      "Kafka",
+      "React",
+      "TypeScript"
+    ],
+    "summary": "Compared against 5 top market ads. Matching (10): Git, Docker, PostgreSQL, REST API, Redis, Linux. Gaps (5): Kubernetes, RabbitMQ, Kafka, React, TypeScript. Strengthen the gap items to match senior postings."
+  },
+  "_meta": {
+    "top_k": 5,
+    "embedding_model": "BAAI/bge-m3",
+    "retrieval": "REAL ChromaDB from jobvision_clean.jsonl",
+    "generation": "heuristic overlap (no GEMINI_API_KEY here)"
+  }
+}

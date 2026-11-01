@@ -1,0 +1,255 @@
+/* Minimalist styles — system font stack, neutral palette, RTL-friendly. */
+
+:root {
+  --bg: #f6f7f9;
+  --card: #ffffff;
+  --text: #1a1d21;
+  --muted: #6b7280;
+  --border: #e3e6ea;
+  --accent: #2563eb;
+  --match-bg: #ecfdf5;
+  --match-fg: #047857;
+  --missing-bg: #fef2f2;
+  --missing-fg: #b91c1c;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: "Vazirmatn", "Segoe UI", Tahoma, system-ui, sans-serif;
+  line-height: 1.7;
+}
+
+.container {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 2rem 1rem 4rem;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 1.8rem;
+}
+
+.header p {
+  margin: 0.25rem 0 0;
+  color: var(--muted);
+}
+
+.card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 1.25rem;
+  margin-top: 1.25rem;
+}
+
+.card h2 {
+  margin: 0 0 0.75rem;
+  font-size: 1.1rem;
+}
+
+/* Mode switch (tabs) */
+.mode-switch {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.mode-switch button {
+  flex: 1;
+  padding: 0.5rem;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: transparent;
+  color: var(--muted);
+  cursor: pointer;
+  font: inherit;
+}
+
+.mode-switch button.active {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #fff;
+}
+
+textarea,
+.file-drop {
+  display: block;
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  font: inherit;
+  background: var(--bg);
+}
+
+textarea {
+  resize: vertical;
+}
+
+.file-drop {
+  text-align: center;
+  color: var(--muted);
+  cursor: pointer;
+}
+
+.file-drop input {
+  display: none;
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+}
+
+.controls label {
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.controls select {
+  margin-inline-start: 0.5rem;
+  padding: 0.35rem 0.5rem;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  font: inherit;
+  background: var(--card);
+}
+
+.submit {
+  padding: 0.6rem 1.6rem;
+  border: none;
+  border-radius: 8px;
+  background: var(--accent);
+  color: #fff;
+  font: inherit;
+  cursor: pointer;
+}
+
+.submit:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.error {
+  color: var(--missing-fg);
+  margin: 0.75rem 0 0;
+  font-size: 0.95rem;
+}
+
+/* Skill chips */
+.skills {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.skills h3 {
+  font-size: 0.95rem;
+  margin: 0 0 0.5rem;
+}
+
+.skills h3.match {
+  color: var(--match-fg);
+}
+
+.skills h3.missing {
+  color: var(--missing-fg);
+}
+
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.chip {
+  padding: 0.15rem 0.6rem;
+  border-radius: 999px;
+  font-size: 0.85rem;
+}
+
+.chip.match {
+  background: var(--match-bg);
+  color: var(--match-fg);
+}
+
+.chip.missing {
+  background: var(--missing-bg);
+  color: var(--missing-fg);
+}
+
+.summary {
+  margin: 1rem 0 0;
+  padding-top: 1rem;
+  border-top: 1px dashed var(--border);
+}
+
+/* Matched jobs */
+.jobs {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.jobs li {
+  padding: 0.75rem 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.jobs li:last-child {
+  border-bottom: none;
+}
+
+.job-head {
+  display: flex;
+  align-items: baseline;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+}
+
+.job-head a {
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.job-head a:hover {
+  text-decoration: underline;
+}
+
+.company {
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.score {
+  margin-inline-start: auto;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 0 0.45rem;
+  font-size: 0.85rem;
+}
+
+.desc {
+  margin: 0.35rem 0 0;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+@media (max-width: 560px) {
+  .skills {
+    grid-template-columns: 1fr;
+  }
+}
